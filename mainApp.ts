@@ -25,9 +25,9 @@ export const mainApp = (app:Application)=>{
         const userName = "Linda"
         return res.render("verifyAccount",{userName,id})
     })
-    // .get("/api",(req:any,res:any)=>{
-    //     res.status(200).json({
-    //         message:"api is ready"
-    //     })
-    // })
+    .get("/api",(req:any,res:any)=>{
+        res.status(200).json({
+            message:"api is ready"
+        })
+    })
 }
